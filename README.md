@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 PHP Extension for StarUML 2
 ============================
 
@@ -86,3 +87,7 @@ Belows are the rules to convert from UML model elements to PHP source codes.
 
 * converted to _PHP Implements_ (`implements`).
 * Allowed only for _UMLClass_ to _UMLInterface_.
+=======
+# PHPCodeGenerator
+PHPCodeGenerator Plugin For StarUML 
+>>>>>>> 59809a4989732790ec6d7bbcd05761ad937bf278

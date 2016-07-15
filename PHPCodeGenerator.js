@@ -882,7 +882,7 @@ define(function (require, exports, module) {
                             codeWriter.writeLine('return "";');
                         } else if (returnType === "array") {
                             codeWriter.writeLine("return array();");
-                        } else if(returnType === "object" || returnType === "$this"){
+                        } else if(returnType === "$this"){
                             if(!elem.isStatic)
                                 codeWriter.writeLine("return $this;");
                         }  else if(returnType === "create"){
