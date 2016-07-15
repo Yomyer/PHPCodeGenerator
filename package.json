@@ -1,0 +1,16 @@
+{
+    "name": "staruml.php",
+    "title": "PHP",
+    "description": "PHP code generation.",
+    "homepage": "https://github.com/pedro151/starumlPHP",
+    "keywords": ["php"],
+    "version": "0.1.4",
+    "author": {
+        "name": "Pedro Alarcão",
+        "url": "https://github.com/pedro151"
+    },
+    "license": "MIT",
+    "engines": {
+        "staruml": ">=2.0.0"
+    }
+}
