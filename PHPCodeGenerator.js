@@ -425,7 +425,7 @@ define(function (require, exports, module) {
         }
 
         if(_type == "object")
-            _type = "$this";
+            _type = "object";
 
         return _type;
     };
@@ -795,7 +795,12 @@ define(function (require, exports, module) {
                 doc += "\n@param " + _that.getType(param, 1, 1) + " " + _that.getParamName(param.name, 1) + " " + param.documentation;
             });
             if (returnParam) {
-                doc += "\n@return " + this.getType(returnParam, 1, 1) + " " + returnParam.documentation;
+                var type = this.getType(returnParam, 1, 1);
+
+                if(type == 'object')
+                    doc += "\n@return $this " + returnParam.documentation;
+                else
+                    doc += "\n@return " + this.getType(returnParam, 1, 1) + " " + returnParam.documentation;
             }
             this.writeDoc(codeWriter, doc, options);
 
